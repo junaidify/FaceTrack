@@ -22,7 +22,8 @@ const Dashboard = () => {
     if (webcamImage) {
       setIsLoading(true);
       try {
-        const res = await axios.post("http://localhost:3000/attendance", {
+        const res = await axios.post("/api/v1/attendance/mark", {
+          sessionId: "SESSION_ID_HERE", // TODO: get from session context
           image: webcamImage,
         });
         console.log("Image Successfully sent", res.data);

@@ -1,29 +1,23 @@
-# Use base image
-FROM python:3.10-slim
+# Stage 1: Build
+FROM maven:3.9-eclipse-temurin-17 AS build
+WORKDIR /app
+COPY pom.xml .
+RUN mvn dependency:go-offline -B
+COPY src ./src
+RUN mvn package -DskipTests -B
 
-# Install system-level dependencies
-RUN apt-get update && apt-get install -y \
-    build-essential \
-    cmake \
-    libglib2.0-0 \
-    libsm6 \
-    libxrender1 \
-    libxext6 \
-    libboost-all-dev \
-    libopencv-dev \
-    && rm -rf /var/lib/apt/lists/*
-
-# Set working directory
+# Stage 2: Runtime
+FROM eclipse-temurin:17-jre-jammy
 WORKDIR /app
 
-# Copy requirements first
-COPY requirements.txt .
+RUN groupadd -r facetrack && useradd -r -g facetrack facetrack
+COPY --from=build /app/target/*.jar app.jar
+RUN chown -R facetrack:facetrack /app
 
-# Install Python dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+USER facetrack
+EXPOSE 8000
 
-# Copy the rest of the application
-COPY . .
+HEALTHCHECK --interval=30s --timeout=5s --retries=3 \
+  CMD curl -f http://localhost:8000/healthz || exit 1
 
-# Run FastAPI server
-CMD ["uvicorn", "pythonscript.encodeimg:app", "--host", "0.0.0.0", "--port", "8000"]
+ENTRYPOINT ["java", "-jar", "app.jar"]

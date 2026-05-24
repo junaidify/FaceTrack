@@ -6,7 +6,7 @@ AI-powered classroom attendance system using facial recognition. Students face a
 
 ```
 FaceTrack/
-├── Backend-Spring/   # Java 17 · Spring Boot 3.3 · PostgreSQL · JWT
+├── backend/          # Java 17 · Spring Boot 3.3 · PostgreSQL · JWT
 ├── FaceService/      # Python 3.11 · FastAPI · InsightFace (ArcFace)
 ├── Frontend/         # React 19 · TypeScript · Vite · Material-UI
 └── docker-compose.yml
@@ -59,7 +59,7 @@ docker-compose up --build
 
 ## Environment Variables
 
-See `Backend-Spring/.env.example` and `FaceService/.env.example` for all configuration options.
+See `backend/src/main/resources/application.yml` and `FaceService/.env.example` for all configuration options.
 
 Key variables: `JWT_SECRET`, `POSTGRES_URL`, `FACE_SERVICE_URL`, `FACE_MATCH_THRESHOLD`
 

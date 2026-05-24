@@ -10,6 +10,8 @@ RUN mvn package -DskipTests -B
 FROM eclipse-temurin:17-jre-jammy
 WORKDIR /app
 
+RUN apt-get update && apt-get install -y --no-install-recommends curl \
+    && rm -rf /var/lib/apt/lists/*
 RUN groupadd -r facetrack && useradd -r -g facetrack facetrack
 COPY --from=build /app/target/*.jar app.jar
 RUN chown -R facetrack:facetrack /app

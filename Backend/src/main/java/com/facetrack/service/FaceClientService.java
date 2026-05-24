@@ -10,6 +10,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.time.Duration;
 import java.util.List;
 import java.util.Map;
@@ -46,8 +48,8 @@ public class FaceClientService {
                 .onStatus(status -> status.value() == 422,
                         clientResponse -> clientResponse.bodyToMono(Map.class)
                                 .flatMap(body -> {
-                                    String msg = body.containsKey("message")
-                                            ? body.get("message").toString()
+                                    String msg = body.containsKey("detail")
+                                            ? body.get("detail").toString()
                                             : "No face detected.";
                                     return Mono.error(new FaceServiceException(msg, HttpStatus.BAD_REQUEST));
                                 }))
@@ -77,8 +79,8 @@ public class FaceClientService {
                 .onStatus(status -> status.value() == 422,
                         clientResponse -> clientResponse.bodyToMono(Map.class)
                                 .flatMap(body -> {
-                                    String msg = body.containsKey("message")
-                                            ? body.get("message").toString()
+                                    String msg = body.containsKey("detail")
+                                            ? body.get("detail").toString()
                                             : "No face detected.";
                                     return Mono.error(new FaceServiceException(msg, HttpStatus.BAD_REQUEST));
                                 }))
@@ -102,6 +104,7 @@ public class FaceClientService {
     @Data
     public static class MatchResult {
         private boolean matched;
+        @JsonProperty("best_index")
         private Integer bestIndex;
         private Double similarity;
     }

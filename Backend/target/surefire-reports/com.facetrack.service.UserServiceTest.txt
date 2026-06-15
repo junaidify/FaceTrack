@@ -1,0 +1,1003 @@
+-------------------------------------------------------------------------------
+Test set: com.facetrack.service.UserServiceTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 9, Skipped: 0, Time elapsed: 0.044 s <<< FAILURE! -- in com.facetrack.service.UserServiceTest
+com.facetrack.service.UserServiceTest.testDeleteUserWithAssignedClasses -- Time elapsed: 0.006 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problems: 
+	Duplicate field UserServiceTest.userId
+	Duplicate field UserServiceTest.testUser
+	Duplicate field UserServiceTest.userCreateRequest
+	Duplicate method setUp() in type UserServiceTest
+	Duplicate method testListAll() in type UserServiceTest
+	Duplicate method testListTeachers() in type UserServiceTest
+	Duplicate method testListTeachersEmpty() in type UserServiceTest
+	Duplicate method testCreateUserSuccess() in type UserServiceTest
+	Duplicate method testCreateUserEmailConflict() in type UserServiceTest
+	Duplicate method testDeleteUserSuccess() in type UserServiceTest
+	Duplicate method testDeleteUserNotFound() in type UserServiceTest
+	Duplicate method testDeleteUserWithAssignedClasses() in type UserServiceTest
+	Duplicate method testDeleteUserWithActiveSessions() in type UserServiceTest
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method PagingAndSortingRepository<User,UUID>.findAll(Pageable)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method QueryByExampleExecutor<User>.findAll(Example<S>, Pageable)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method CrudRepository<User,UUID>.existsById(UUID)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method CrudRepository<User,UUID>.deleteAllById(Iterable<? extends UUID>)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method QueryByExampleExecutor<User>.findOne(Example<S>)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method JpaRepository<User,UUID>.saveAndFlush(S)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method ListCrudRepository<User,UUID>.saveAll(Iterable<S>)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method JpaRepository<User,UUID>.flush()
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method JpaRepository<User,UUID>.deleteAllInBatch(Iterable<User>)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method JpaRepository<User,UUID>.deleteAllByIdInBatch(Iterable<UUID>)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method JpaRepository<User,UUID>.saveAllAndFlush(Iterable<S>)
+	The method findOne(Specification<User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	The method findAll(Specification<User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	java.util.Page cannot be resolved to a type
+	The method count(Specification<User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	The method exists(Specification<User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	The method delete(Specification<User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	Erasure of method saveAll(Iterable<? extends User>) is the same as another method in type UserServiceTest.MockUserRepository
+	Name clash: The method saveAll(Iterable<? extends User>) of type UserServiceTest.MockUserRepository has the same erasure as saveAll(Iterable<S>) of type CrudRepository<T,ID> but does not override it
+	Name clash: The method saveAll(Iterable<? extends User>) of type UserServiceTest.MockUserRepository has the same erasure as saveAll(Iterable<S>) of type ListCrudRepository<T,ID> but does not override it
+	The method saveAll(Iterable<? extends User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	Erasure of method saveAll(Iterable<S>) is the same as another method in type UserServiceTest.MockUserRepository
+	java.util.Page cannot be resolved to a type
+	java.util.Page cannot be resolved to a type
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method CrudRepository<SchoolClass,UUID>.findById(UUID)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method SchoolClassRepository.findByName(String)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method JpaRepository<SchoolClass,UUID>.deleteAllByIdInBatch(Iterable<UUID>)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method ListCrudRepository<SchoolClass,UUID>.saveAll(Iterable<S>)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method JpaRepository<SchoolClass,UUID>.saveAndFlush(S)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method JpaRepository<SchoolClass,UUID>.flush()
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method QueryByExampleExecutor<SchoolClass>.findAll(Example<S>, Pageable)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method JpaRepository<SchoolClass,UUID>.deleteAllInBatch(Iterable<SchoolClass>)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method JpaRepository<SchoolClass,UUID>.saveAllAndFlush(Iterable<S>)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method QueryByExampleExecutor<SchoolClass>.findOne(Example<S>)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method SchoolClassRepository.existsByName(String)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method PagingAndSortingRepository<SchoolClass,UUID>.findAll(Pageable)
+	The method findOne(Specification<SchoolClass>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	The method findAll(Specification<SchoolClass>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	java.util.Page cannot be resolved to a type
+	The method count(Specification<SchoolClass>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	The method exists(Specification<SchoolClass>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	The method delete(Specification<SchoolClass>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	Name clash: The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockSchoolClassRepository has the same erasure as saveAll(Iterable<S>) of type ListCrudRepository<T,ID> but does not override it
+	Name clash: The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockSchoolClassRepository has the same erasure as saveAll(Iterable<S>) of type CrudRepository<T,ID> but does not override it
+	The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	The method findById(UUID) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	java.util.Page cannot be resolved to a type
+	java.util.Page cannot be resolved to a type
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method CrudRepository<AttendanceSession,UUID>.findById(UUID)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method AttendanceSessionRepository.findBySchoolClassIdAndStatus(UUID, SessionStatus)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method JpaRepository<AttendanceSession,UUID>.deleteAllByIdInBatch(Iterable<UUID>)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method JpaRepository<AttendanceSession,UUID>.flush()
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method ListCrudRepository<AttendanceSession,UUID>.saveAll(Iterable<S>)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method AttendanceSessionRepository.findBySchoolClassIdOrderByStartedAtDesc(UUID)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method JpaRepository<AttendanceSession,UUID>.saveAndFlush(S)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method QueryByExampleExecutor<AttendanceSession>.findAll(Example<S>, Pageable)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method JpaRepository<AttendanceSession,UUID>.deleteAllInBatch(Iterable<AttendanceSession>)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method QueryByExampleExecutor<AttendanceSession>.findOne(Example<S>)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method PagingAndSortingRepository<AttendanceSession,UUID>.findAll(Pageable)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method AttendanceSessionRepository.findAllByOrderByStartedAtDesc()
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method JpaRepository<AttendanceSession,UUID>.saveAllAndFlush(Iterable<S>)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method AttendanceSessionRepository.findBySchoolClassIdAndTeacherIdOrderByStartedAtDesc(UUID, UUID)
+	The method findOne(Specification<AttendanceSession>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	The method findAll(Specification<AttendanceSession>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	java.util.Page cannot be resolved to a type
+	The method count(Specification<AttendanceSession>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	The method exists(Specification<AttendanceSession>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	The method delete(Specification<AttendanceSession>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	Name clash: The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockAttendanceSessionRepository has the same erasure as saveAll(Iterable<S>) of type ListCrudRepository<T,ID> but does not override it
+	Name clash: The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockAttendanceSessionRepository has the same erasure as saveAll(Iterable<S>) of type CrudRepository<T,ID> but does not override it
+	The method findById(UUID) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	java.util.Page cannot be resolved to a type
+	Syntax error on token "}", delete this token
+	Duplicate field UserServiceTest.userId
+	Duplicate field UserServiceTest.testUser
+	Duplicate field UserServiceTest.userCreateRequest
+	Duplicate method setUp() in type UserServiceTest
+	Duplicate method testListAll() in type UserServiceTest
+	Duplicate method testListTeachers() in type UserServiceTest
+	Duplicate method testListTeachersEmpty() in type UserServiceTest
+	Duplicate method testCreateUserSuccess() in type UserServiceTest
+	Duplicate method testCreateUserEmailConflict() in type UserServiceTest
+	Duplicate method testDeleteUserSuccess() in type UserServiceTest
+	Duplicate method testDeleteUserNotFound() in type UserServiceTest
+	Duplicate method testDeleteUserWithAssignedClasses() in type UserServiceTest
+	Duplicate method testDeleteUserWithActiveSessions() in type UserServiceTest
+
+	at com.facetrack.service.UserServiceTest.<init>(UserServiceTest.java:38)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+com.facetrack.service.UserServiceTest.testCreateUserEmailConflict -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problems: 
+	Duplicate field UserServiceTest.userId
+	Duplicate field UserServiceTest.testUser
+	Duplicate field UserServiceTest.userCreateRequest
+	Duplicate method setUp() in type UserServiceTest
+	Duplicate method testListAll() in type UserServiceTest
+	Duplicate method testListTeachers() in type UserServiceTest
+	Duplicate method testListTeachersEmpty() in type UserServiceTest
+	Duplicate method testCreateUserSuccess() in type UserServiceTest
+	Duplicate method testCreateUserEmailConflict() in type UserServiceTest
+	Duplicate method testDeleteUserSuccess() in type UserServiceTest
+	Duplicate method testDeleteUserNotFound() in type UserServiceTest
+	Duplicate method testDeleteUserWithAssignedClasses() in type UserServiceTest
+	Duplicate method testDeleteUserWithActiveSessions() in type UserServiceTest
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method PagingAndSortingRepository<User,UUID>.findAll(Pageable)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method QueryByExampleExecutor<User>.findAll(Example<S>, Pageable)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method CrudRepository<User,UUID>.existsById(UUID)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method CrudRepository<User,UUID>.deleteAllById(Iterable<? extends UUID>)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method QueryByExampleExecutor<User>.findOne(Example<S>)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method JpaRepository<User,UUID>.saveAndFlush(S)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method ListCrudRepository<User,UUID>.saveAll(Iterable<S>)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method JpaRepository<User,UUID>.flush()
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method JpaRepository<User,UUID>.deleteAllInBatch(Iterable<User>)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method JpaRepository<User,UUID>.deleteAllByIdInBatch(Iterable<UUID>)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method JpaRepository<User,UUID>.saveAllAndFlush(Iterable<S>)
+	The method findOne(Specification<User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	The method findAll(Specification<User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	java.util.Page cannot be resolved to a type
+	The method count(Specification<User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	The method exists(Specification<User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	The method delete(Specification<User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	Erasure of method saveAll(Iterable<? extends User>) is the same as another method in type UserServiceTest.MockUserRepository
+	Name clash: The method saveAll(Iterable<? extends User>) of type UserServiceTest.MockUserRepository has the same erasure as saveAll(Iterable<S>) of type CrudRepository<T,ID> but does not override it
+	Name clash: The method saveAll(Iterable<? extends User>) of type UserServiceTest.MockUserRepository has the same erasure as saveAll(Iterable<S>) of type ListCrudRepository<T,ID> but does not override it
+	The method saveAll(Iterable<? extends User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	Erasure of method saveAll(Iterable<S>) is the same as another method in type UserServiceTest.MockUserRepository
+	java.util.Page cannot be resolved to a type
+	java.util.Page cannot be resolved to a type
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method CrudRepository<SchoolClass,UUID>.findById(UUID)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method SchoolClassRepository.findByName(String)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method JpaRepository<SchoolClass,UUID>.deleteAllByIdInBatch(Iterable<UUID>)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method ListCrudRepository<SchoolClass,UUID>.saveAll(Iterable<S>)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method JpaRepository<SchoolClass,UUID>.saveAndFlush(S)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method JpaRepository<SchoolClass,UUID>.flush()
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method QueryByExampleExecutor<SchoolClass>.findAll(Example<S>, Pageable)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method JpaRepository<SchoolClass,UUID>.deleteAllInBatch(Iterable<SchoolClass>)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method JpaRepository<SchoolClass,UUID>.saveAllAndFlush(Iterable<S>)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method QueryByExampleExecutor<SchoolClass>.findOne(Example<S>)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method SchoolClassRepository.existsByName(String)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method PagingAndSortingRepository<SchoolClass,UUID>.findAll(Pageable)
+	The method findOne(Specification<SchoolClass>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	The method findAll(Specification<SchoolClass>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	java.util.Page cannot be resolved to a type
+	The method count(Specification<SchoolClass>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	The method exists(Specification<SchoolClass>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	The method delete(Specification<SchoolClass>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	Name clash: The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockSchoolClassRepository has the same erasure as saveAll(Iterable<S>) of type ListCrudRepository<T,ID> but does not override it
+	Name clash: The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockSchoolClassRepository has the same erasure as saveAll(Iterable<S>) of type CrudRepository<T,ID> but does not override it
+	The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	The method findById(UUID) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	java.util.Page cannot be resolved to a type
+	java.util.Page cannot be resolved to a type
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method CrudRepository<AttendanceSession,UUID>.findById(UUID)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method AttendanceSessionRepository.findBySchoolClassIdAndStatus(UUID, SessionStatus)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method JpaRepository<AttendanceSession,UUID>.deleteAllByIdInBatch(Iterable<UUID>)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method JpaRepository<AttendanceSession,UUID>.flush()
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method ListCrudRepository<AttendanceSession,UUID>.saveAll(Iterable<S>)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method AttendanceSessionRepository.findBySchoolClassIdOrderByStartedAtDesc(UUID)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method JpaRepository<AttendanceSession,UUID>.saveAndFlush(S)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method QueryByExampleExecutor<AttendanceSession>.findAll(Example<S>, Pageable)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method JpaRepository<AttendanceSession,UUID>.deleteAllInBatch(Iterable<AttendanceSession>)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method QueryByExampleExecutor<AttendanceSession>.findOne(Example<S>)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method PagingAndSortingRepository<AttendanceSession,UUID>.findAll(Pageable)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method AttendanceSessionRepository.findAllByOrderByStartedAtDesc()
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method JpaRepository<AttendanceSession,UUID>.saveAllAndFlush(Iterable<S>)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method AttendanceSessionRepository.findBySchoolClassIdAndTeacherIdOrderByStartedAtDesc(UUID, UUID)
+	The method findOne(Specification<AttendanceSession>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	The method findAll(Specification<AttendanceSession>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	java.util.Page cannot be resolved to a type
+	The method count(Specification<AttendanceSession>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	The method exists(Specification<AttendanceSession>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	The method delete(Specification<AttendanceSession>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	Name clash: The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockAttendanceSessionRepository has the same erasure as saveAll(Iterable<S>) of type ListCrudRepository<T,ID> but does not override it
+	Name clash: The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockAttendanceSessionRepository has the same erasure as saveAll(Iterable<S>) of type CrudRepository<T,ID> but does not override it
+	The method findById(UUID) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	java.util.Page cannot be resolved to a type
+	Syntax error on token "}", delete this token
+	Duplicate field UserServiceTest.userId
+	Duplicate field UserServiceTest.testUser
+	Duplicate field UserServiceTest.userCreateRequest
+	Duplicate method setUp() in type UserServiceTest
+	Duplicate method testListAll() in type UserServiceTest
+	Duplicate method testListTeachers() in type UserServiceTest
+	Duplicate method testListTeachersEmpty() in type UserServiceTest
+	Duplicate method testCreateUserSuccess() in type UserServiceTest
+	Duplicate method testCreateUserEmailConflict() in type UserServiceTest
+	Duplicate method testDeleteUserSuccess() in type UserServiceTest
+	Duplicate method testDeleteUserNotFound() in type UserServiceTest
+	Duplicate method testDeleteUserWithAssignedClasses() in type UserServiceTest
+	Duplicate method testDeleteUserWithActiveSessions() in type UserServiceTest
+
+	at com.facetrack.service.UserServiceTest.<init>(UserServiceTest.java:38)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+com.facetrack.service.UserServiceTest.testListAll -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problems: 
+	Duplicate field UserServiceTest.userId
+	Duplicate field UserServiceTest.testUser
+	Duplicate field UserServiceTest.userCreateRequest
+	Duplicate method setUp() in type UserServiceTest
+	Duplicate method testListAll() in type UserServiceTest
+	Duplicate method testListTeachers() in type UserServiceTest
+	Duplicate method testListTeachersEmpty() in type UserServiceTest
+	Duplicate method testCreateUserSuccess() in type UserServiceTest
+	Duplicate method testCreateUserEmailConflict() in type UserServiceTest
+	Duplicate method testDeleteUserSuccess() in type UserServiceTest
+	Duplicate method testDeleteUserNotFound() in type UserServiceTest
+	Duplicate method testDeleteUserWithAssignedClasses() in type UserServiceTest
+	Duplicate method testDeleteUserWithActiveSessions() in type UserServiceTest
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method PagingAndSortingRepository<User,UUID>.findAll(Pageable)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method QueryByExampleExecutor<User>.findAll(Example<S>, Pageable)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method CrudRepository<User,UUID>.existsById(UUID)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method CrudRepository<User,UUID>.deleteAllById(Iterable<? extends UUID>)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method QueryByExampleExecutor<User>.findOne(Example<S>)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method JpaRepository<User,UUID>.saveAndFlush(S)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method ListCrudRepository<User,UUID>.saveAll(Iterable<S>)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method JpaRepository<User,UUID>.flush()
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method JpaRepository<User,UUID>.deleteAllInBatch(Iterable<User>)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method JpaRepository<User,UUID>.deleteAllByIdInBatch(Iterable<UUID>)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method JpaRepository<User,UUID>.saveAllAndFlush(Iterable<S>)
+	The method findOne(Specification<User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	The method findAll(Specification<User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	java.util.Page cannot be resolved to a type
+	The method count(Specification<User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	The method exists(Specification<User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	The method delete(Specification<User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	Erasure of method saveAll(Iterable<? extends User>) is the same as another method in type UserServiceTest.MockUserRepository
+	Name clash: The method saveAll(Iterable<? extends User>) of type UserServiceTest.MockUserRepository has the same erasure as saveAll(Iterable<S>) of type CrudRepository<T,ID> but does not override it
+	Name clash: The method saveAll(Iterable<? extends User>) of type UserServiceTest.MockUserRepository has the same erasure as saveAll(Iterable<S>) of type ListCrudRepository<T,ID> but does not override it
+	The method saveAll(Iterable<? extends User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	Erasure of method saveAll(Iterable<S>) is the same as another method in type UserServiceTest.MockUserRepository
+	java.util.Page cannot be resolved to a type
+	java.util.Page cannot be resolved to a type
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method CrudRepository<SchoolClass,UUID>.findById(UUID)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method SchoolClassRepository.findByName(String)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method JpaRepository<SchoolClass,UUID>.deleteAllByIdInBatch(Iterable<UUID>)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method ListCrudRepository<SchoolClass,UUID>.saveAll(Iterable<S>)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method JpaRepository<SchoolClass,UUID>.saveAndFlush(S)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method JpaRepository<SchoolClass,UUID>.flush()
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method QueryByExampleExecutor<SchoolClass>.findAll(Example<S>, Pageable)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method JpaRepository<SchoolClass,UUID>.deleteAllInBatch(Iterable<SchoolClass>)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method JpaRepository<SchoolClass,UUID>.saveAllAndFlush(Iterable<S>)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method QueryByExampleExecutor<SchoolClass>.findOne(Example<S>)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method SchoolClassRepository.existsByName(String)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method PagingAndSortingRepository<SchoolClass,UUID>.findAll(Pageable)
+	The method findOne(Specification<SchoolClass>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	The method findAll(Specification<SchoolClass>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	java.util.Page cannot be resolved to a type
+	The method count(Specification<SchoolClass>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	The method exists(Specification<SchoolClass>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	The method delete(Specification<SchoolClass>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	Name clash: The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockSchoolClassRepository has the same erasure as saveAll(Iterable<S>) of type ListCrudRepository<T,ID> but does not override it
+	Name clash: The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockSchoolClassRepository has the same erasure as saveAll(Iterable<S>) of type CrudRepository<T,ID> but does not override it
+	The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	The method findById(UUID) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	java.util.Page cannot be resolved to a type
+	java.util.Page cannot be resolved to a type
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method CrudRepository<AttendanceSession,UUID>.findById(UUID)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method AttendanceSessionRepository.findBySchoolClassIdAndStatus(UUID, SessionStatus)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method JpaRepository<AttendanceSession,UUID>.deleteAllByIdInBatch(Iterable<UUID>)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method JpaRepository<AttendanceSession,UUID>.flush()
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method ListCrudRepository<AttendanceSession,UUID>.saveAll(Iterable<S>)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method AttendanceSessionRepository.findBySchoolClassIdOrderByStartedAtDesc(UUID)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method JpaRepository<AttendanceSession,UUID>.saveAndFlush(S)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method QueryByExampleExecutor<AttendanceSession>.findAll(Example<S>, Pageable)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method JpaRepository<AttendanceSession,UUID>.deleteAllInBatch(Iterable<AttendanceSession>)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method QueryByExampleExecutor<AttendanceSession>.findOne(Example<S>)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method PagingAndSortingRepository<AttendanceSession,UUID>.findAll(Pageable)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method AttendanceSessionRepository.findAllByOrderByStartedAtDesc()
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method JpaRepository<AttendanceSession,UUID>.saveAllAndFlush(Iterable<S>)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method AttendanceSessionRepository.findBySchoolClassIdAndTeacherIdOrderByStartedAtDesc(UUID, UUID)
+	The method findOne(Specification<AttendanceSession>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	The method findAll(Specification<AttendanceSession>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	java.util.Page cannot be resolved to a type
+	The method count(Specification<AttendanceSession>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	The method exists(Specification<AttendanceSession>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	The method delete(Specification<AttendanceSession>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	Name clash: The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockAttendanceSessionRepository has the same erasure as saveAll(Iterable<S>) of type ListCrudRepository<T,ID> but does not override it
+	Name clash: The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockAttendanceSessionRepository has the same erasure as saveAll(Iterable<S>) of type CrudRepository<T,ID> but does not override it
+	The method findById(UUID) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	java.util.Page cannot be resolved to a type
+	Syntax error on token "}", delete this token
+	Duplicate field UserServiceTest.userId
+	Duplicate field UserServiceTest.testUser
+	Duplicate field UserServiceTest.userCreateRequest
+	Duplicate method setUp() in type UserServiceTest
+	Duplicate method testListAll() in type UserServiceTest
+	Duplicate method testListTeachers() in type UserServiceTest
+	Duplicate method testListTeachersEmpty() in type UserServiceTest
+	Duplicate method testCreateUserSuccess() in type UserServiceTest
+	Duplicate method testCreateUserEmailConflict() in type UserServiceTest
+	Duplicate method testDeleteUserSuccess() in type UserServiceTest
+	Duplicate method testDeleteUserNotFound() in type UserServiceTest
+	Duplicate method testDeleteUserWithAssignedClasses() in type UserServiceTest
+	Duplicate method testDeleteUserWithActiveSessions() in type UserServiceTest
+
+	at com.facetrack.service.UserServiceTest.<init>(UserServiceTest.java:38)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+com.facetrack.service.UserServiceTest.testDeleteUserSuccess -- Time elapsed: 0 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problems: 
+	Duplicate field UserServiceTest.userId
+	Duplicate field UserServiceTest.testUser
+	Duplicate field UserServiceTest.userCreateRequest
+	Duplicate method setUp() in type UserServiceTest
+	Duplicate method testListAll() in type UserServiceTest
+	Duplicate method testListTeachers() in type UserServiceTest
+	Duplicate method testListTeachersEmpty() in type UserServiceTest
+	Duplicate method testCreateUserSuccess() in type UserServiceTest
+	Duplicate method testCreateUserEmailConflict() in type UserServiceTest
+	Duplicate method testDeleteUserSuccess() in type UserServiceTest
+	Duplicate method testDeleteUserNotFound() in type UserServiceTest
+	Duplicate method testDeleteUserWithAssignedClasses() in type UserServiceTest
+	Duplicate method testDeleteUserWithActiveSessions() in type UserServiceTest
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method PagingAndSortingRepository<User,UUID>.findAll(Pageable)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method QueryByExampleExecutor<User>.findAll(Example<S>, Pageable)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method CrudRepository<User,UUID>.existsById(UUID)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method CrudRepository<User,UUID>.deleteAllById(Iterable<? extends UUID>)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method QueryByExampleExecutor<User>.findOne(Example<S>)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method JpaRepository<User,UUID>.saveAndFlush(S)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method ListCrudRepository<User,UUID>.saveAll(Iterable<S>)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method JpaRepository<User,UUID>.flush()
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method JpaRepository<User,UUID>.deleteAllInBatch(Iterable<User>)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method JpaRepository<User,UUID>.deleteAllByIdInBatch(Iterable<UUID>)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method JpaRepository<User,UUID>.saveAllAndFlush(Iterable<S>)
+	The method findOne(Specification<User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	The method findAll(Specification<User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	java.util.Page cannot be resolved to a type
+	The method count(Specification<User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	The method exists(Specification<User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	The method delete(Specification<User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	Erasure of method saveAll(Iterable<? extends User>) is the same as another method in type UserServiceTest.MockUserRepository
+	Name clash: The method saveAll(Iterable<? extends User>) of type UserServiceTest.MockUserRepository has the same erasure as saveAll(Iterable<S>) of type CrudRepository<T,ID> but does not override it
+	Name clash: The method saveAll(Iterable<? extends User>) of type UserServiceTest.MockUserRepository has the same erasure as saveAll(Iterable<S>) of type ListCrudRepository<T,ID> but does not override it
+	The method saveAll(Iterable<? extends User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	Erasure of method saveAll(Iterable<S>) is the same as another method in type UserServiceTest.MockUserRepository
+	java.util.Page cannot be resolved to a type
+	java.util.Page cannot be resolved to a type
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method CrudRepository<SchoolClass,UUID>.findById(UUID)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method SchoolClassRepository.findByName(String)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method JpaRepository<SchoolClass,UUID>.deleteAllByIdInBatch(Iterable<UUID>)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method ListCrudRepository<SchoolClass,UUID>.saveAll(Iterable<S>)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method JpaRepository<SchoolClass,UUID>.saveAndFlush(S)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method JpaRepository<SchoolClass,UUID>.flush()
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method QueryByExampleExecutor<SchoolClass>.findAll(Example<S>, Pageable)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method JpaRepository<SchoolClass,UUID>.deleteAllInBatch(Iterable<SchoolClass>)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method JpaRepository<SchoolClass,UUID>.saveAllAndFlush(Iterable<S>)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method QueryByExampleExecutor<SchoolClass>.findOne(Example<S>)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method SchoolClassRepository.existsByName(String)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method PagingAndSortingRepository<SchoolClass,UUID>.findAll(Pageable)
+	The method findOne(Specification<SchoolClass>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	The method findAll(Specification<SchoolClass>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	java.util.Page cannot be resolved to a type
+	The method count(Specification<SchoolClass>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	The method exists(Specification<SchoolClass>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	The method delete(Specification<SchoolClass>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	Name clash: The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockSchoolClassRepository has the same erasure as saveAll(Iterable<S>) of type ListCrudRepository<T,ID> but does not override it
+	Name clash: The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockSchoolClassRepository has the same erasure as saveAll(Iterable<S>) of type CrudRepository<T,ID> but does not override it
+	The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	The method findById(UUID) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	java.util.Page cannot be resolved to a type
+	java.util.Page cannot be resolved to a type
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method CrudRepository<AttendanceSession,UUID>.findById(UUID)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method AttendanceSessionRepository.findBySchoolClassIdAndStatus(UUID, SessionStatus)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method JpaRepository<AttendanceSession,UUID>.deleteAllByIdInBatch(Iterable<UUID>)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method JpaRepository<AttendanceSession,UUID>.flush()
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method ListCrudRepository<AttendanceSession,UUID>.saveAll(Iterable<S>)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method AttendanceSessionRepository.findBySchoolClassIdOrderByStartedAtDesc(UUID)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method JpaRepository<AttendanceSession,UUID>.saveAndFlush(S)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method QueryByExampleExecutor<AttendanceSession>.findAll(Example<S>, Pageable)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method JpaRepository<AttendanceSession,UUID>.deleteAllInBatch(Iterable<AttendanceSession>)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method QueryByExampleExecutor<AttendanceSession>.findOne(Example<S>)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method PagingAndSortingRepository<AttendanceSession,UUID>.findAll(Pageable)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method AttendanceSessionRepository.findAllByOrderByStartedAtDesc()
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method JpaRepository<AttendanceSession,UUID>.saveAllAndFlush(Iterable<S>)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method AttendanceSessionRepository.findBySchoolClassIdAndTeacherIdOrderByStartedAtDesc(UUID, UUID)
+	The method findOne(Specification<AttendanceSession>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	The method findAll(Specification<AttendanceSession>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	java.util.Page cannot be resolved to a type
+	The method count(Specification<AttendanceSession>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	The method exists(Specification<AttendanceSession>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	The method delete(Specification<AttendanceSession>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	Name clash: The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockAttendanceSessionRepository has the same erasure as saveAll(Iterable<S>) of type ListCrudRepository<T,ID> but does not override it
+	Name clash: The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockAttendanceSessionRepository has the same erasure as saveAll(Iterable<S>) of type CrudRepository<T,ID> but does not override it
+	The method findById(UUID) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	java.util.Page cannot be resolved to a type
+	Syntax error on token "}", delete this token
+	Duplicate field UserServiceTest.userId
+	Duplicate field UserServiceTest.testUser
+	Duplicate field UserServiceTest.userCreateRequest
+	Duplicate method setUp() in type UserServiceTest
+	Duplicate method testListAll() in type UserServiceTest
+	Duplicate method testListTeachers() in type UserServiceTest
+	Duplicate method testListTeachersEmpty() in type UserServiceTest
+	Duplicate method testCreateUserSuccess() in type UserServiceTest
+	Duplicate method testCreateUserEmailConflict() in type UserServiceTest
+	Duplicate method testDeleteUserSuccess() in type UserServiceTest
+	Duplicate method testDeleteUserNotFound() in type UserServiceTest
+	Duplicate method testDeleteUserWithAssignedClasses() in type UserServiceTest
+	Duplicate method testDeleteUserWithActiveSessions() in type UserServiceTest
+
+	at com.facetrack.service.UserServiceTest.<init>(UserServiceTest.java:38)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+com.facetrack.service.UserServiceTest.testListTeachers -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problems: 
+	Duplicate field UserServiceTest.userId
+	Duplicate field UserServiceTest.testUser
+	Duplicate field UserServiceTest.userCreateRequest
+	Duplicate method setUp() in type UserServiceTest
+	Duplicate method testListAll() in type UserServiceTest
+	Duplicate method testListTeachers() in type UserServiceTest
+	Duplicate method testListTeachersEmpty() in type UserServiceTest
+	Duplicate method testCreateUserSuccess() in type UserServiceTest
+	Duplicate method testCreateUserEmailConflict() in type UserServiceTest
+	Duplicate method testDeleteUserSuccess() in type UserServiceTest
+	Duplicate method testDeleteUserNotFound() in type UserServiceTest
+	Duplicate method testDeleteUserWithAssignedClasses() in type UserServiceTest
+	Duplicate method testDeleteUserWithActiveSessions() in type UserServiceTest
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method PagingAndSortingRepository<User,UUID>.findAll(Pageable)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method QueryByExampleExecutor<User>.findAll(Example<S>, Pageable)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method CrudRepository<User,UUID>.existsById(UUID)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method CrudRepository<User,UUID>.deleteAllById(Iterable<? extends UUID>)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method QueryByExampleExecutor<User>.findOne(Example<S>)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method JpaRepository<User,UUID>.saveAndFlush(S)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method ListCrudRepository<User,UUID>.saveAll(Iterable<S>)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method JpaRepository<User,UUID>.flush()
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method JpaRepository<User,UUID>.deleteAllInBatch(Iterable<User>)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method JpaRepository<User,UUID>.deleteAllByIdInBatch(Iterable<UUID>)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method JpaRepository<User,UUID>.saveAllAndFlush(Iterable<S>)
+	The method findOne(Specification<User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	The method findAll(Specification<User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	java.util.Page cannot be resolved to a type
+	The method count(Specification<User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	The method exists(Specification<User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	The method delete(Specification<User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	Erasure of method saveAll(Iterable<? extends User>) is the same as another method in type UserServiceTest.MockUserRepository
+	Name clash: The method saveAll(Iterable<? extends User>) of type UserServiceTest.MockUserRepository has the same erasure as saveAll(Iterable<S>) of type CrudRepository<T,ID> but does not override it
+	Name clash: The method saveAll(Iterable<? extends User>) of type UserServiceTest.MockUserRepository has the same erasure as saveAll(Iterable<S>) of type ListCrudRepository<T,ID> but does not override it
+	The method saveAll(Iterable<? extends User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	Erasure of method saveAll(Iterable<S>) is the same as another method in type UserServiceTest.MockUserRepository
+	java.util.Page cannot be resolved to a type
+	java.util.Page cannot be resolved to a type
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method CrudRepository<SchoolClass,UUID>.findById(UUID)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method SchoolClassRepository.findByName(String)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method JpaRepository<SchoolClass,UUID>.deleteAllByIdInBatch(Iterable<UUID>)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method ListCrudRepository<SchoolClass,UUID>.saveAll(Iterable<S>)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method JpaRepository<SchoolClass,UUID>.saveAndFlush(S)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method JpaRepository<SchoolClass,UUID>.flush()
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method QueryByExampleExecutor<SchoolClass>.findAll(Example<S>, Pageable)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method JpaRepository<SchoolClass,UUID>.deleteAllInBatch(Iterable<SchoolClass>)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method JpaRepository<SchoolClass,UUID>.saveAllAndFlush(Iterable<S>)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method QueryByExampleExecutor<SchoolClass>.findOne(Example<S>)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method SchoolClassRepository.existsByName(String)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method PagingAndSortingRepository<SchoolClass,UUID>.findAll(Pageable)
+	The method findOne(Specification<SchoolClass>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	The method findAll(Specification<SchoolClass>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	java.util.Page cannot be resolved to a type
+	The method count(Specification<SchoolClass>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	The method exists(Specification<SchoolClass>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	The method delete(Specification<SchoolClass>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	Name clash: The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockSchoolClassRepository has the same erasure as saveAll(Iterable<S>) of type ListCrudRepository<T,ID> but does not override it
+	Name clash: The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockSchoolClassRepository has the same erasure as saveAll(Iterable<S>) of type CrudRepository<T,ID> but does not override it
+	The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	The method findById(UUID) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	java.util.Page cannot be resolved to a type
+	java.util.Page cannot be resolved to a type
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method CrudRepository<AttendanceSession,UUID>.findById(UUID)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method AttendanceSessionRepository.findBySchoolClassIdAndStatus(UUID, SessionStatus)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method JpaRepository<AttendanceSession,UUID>.deleteAllByIdInBatch(Iterable<UUID>)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method JpaRepository<AttendanceSession,UUID>.flush()
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method ListCrudRepository<AttendanceSession,UUID>.saveAll(Iterable<S>)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method AttendanceSessionRepository.findBySchoolClassIdOrderByStartedAtDesc(UUID)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method JpaRepository<AttendanceSession,UUID>.saveAndFlush(S)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method QueryByExampleExecutor<AttendanceSession>.findAll(Example<S>, Pageable)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method JpaRepository<AttendanceSession,UUID>.deleteAllInBatch(Iterable<AttendanceSession>)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method QueryByExampleExecutor<AttendanceSession>.findOne(Example<S>)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method PagingAndSortingRepository<AttendanceSession,UUID>.findAll(Pageable)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method AttendanceSessionRepository.findAllByOrderByStartedAtDesc()
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method JpaRepository<AttendanceSession,UUID>.saveAllAndFlush(Iterable<S>)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method AttendanceSessionRepository.findBySchoolClassIdAndTeacherIdOrderByStartedAtDesc(UUID, UUID)
+	The method findOne(Specification<AttendanceSession>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	The method findAll(Specification<AttendanceSession>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	java.util.Page cannot be resolved to a type
+	The method count(Specification<AttendanceSession>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	The method exists(Specification<AttendanceSession>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	The method delete(Specification<AttendanceSession>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	Name clash: The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockAttendanceSessionRepository has the same erasure as saveAll(Iterable<S>) of type ListCrudRepository<T,ID> but does not override it
+	Name clash: The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockAttendanceSessionRepository has the same erasure as saveAll(Iterable<S>) of type CrudRepository<T,ID> but does not override it
+	The method findById(UUID) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	java.util.Page cannot be resolved to a type
+	Syntax error on token "}", delete this token
+	Duplicate field UserServiceTest.userId
+	Duplicate field UserServiceTest.testUser
+	Duplicate field UserServiceTest.userCreateRequest
+	Duplicate method setUp() in type UserServiceTest
+	Duplicate method testListAll() in type UserServiceTest
+	Duplicate method testListTeachers() in type UserServiceTest
+	Duplicate method testListTeachersEmpty() in type UserServiceTest
+	Duplicate method testCreateUserSuccess() in type UserServiceTest
+	Duplicate method testCreateUserEmailConflict() in type UserServiceTest
+	Duplicate method testDeleteUserSuccess() in type UserServiceTest
+	Duplicate method testDeleteUserNotFound() in type UserServiceTest
+	Duplicate method testDeleteUserWithAssignedClasses() in type UserServiceTest
+	Duplicate method testDeleteUserWithActiveSessions() in type UserServiceTest
+
+	at com.facetrack.service.UserServiceTest.<init>(UserServiceTest.java:38)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+com.facetrack.service.UserServiceTest.testCreateUserSuccess -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problems: 
+	Duplicate field UserServiceTest.userId
+	Duplicate field UserServiceTest.testUser
+	Duplicate field UserServiceTest.userCreateRequest
+	Duplicate method setUp() in type UserServiceTest
+	Duplicate method testListAll() in type UserServiceTest
+	Duplicate method testListTeachers() in type UserServiceTest
+	Duplicate method testListTeachersEmpty() in type UserServiceTest
+	Duplicate method testCreateUserSuccess() in type UserServiceTest
+	Duplicate method testCreateUserEmailConflict() in type UserServiceTest
+	Duplicate method testDeleteUserSuccess() in type UserServiceTest
+	Duplicate method testDeleteUserNotFound() in type UserServiceTest
+	Duplicate method testDeleteUserWithAssignedClasses() in type UserServiceTest
+	Duplicate method testDeleteUserWithActiveSessions() in type UserServiceTest
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method PagingAndSortingRepository<User,UUID>.findAll(Pageable)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method QueryByExampleExecutor<User>.findAll(Example<S>, Pageable)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method CrudRepository<User,UUID>.existsById(UUID)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method CrudRepository<User,UUID>.deleteAllById(Iterable<? extends UUID>)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method QueryByExampleExecutor<User>.findOne(Example<S>)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method JpaRepository<User,UUID>.saveAndFlush(S)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method ListCrudRepository<User,UUID>.saveAll(Iterable<S>)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method JpaRepository<User,UUID>.flush()
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method JpaRepository<User,UUID>.deleteAllInBatch(Iterable<User>)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method JpaRepository<User,UUID>.deleteAllByIdInBatch(Iterable<UUID>)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method JpaRepository<User,UUID>.saveAllAndFlush(Iterable<S>)
+	The method findOne(Specification<User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	The method findAll(Specification<User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	java.util.Page cannot be resolved to a type
+	The method count(Specification<User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	The method exists(Specification<User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	The method delete(Specification<User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	Erasure of method saveAll(Iterable<? extends User>) is the same as another method in type UserServiceTest.MockUserRepository
+	Name clash: The method saveAll(Iterable<? extends User>) of type UserServiceTest.MockUserRepository has the same erasure as saveAll(Iterable<S>) of type CrudRepository<T,ID> but does not override it
+	Name clash: The method saveAll(Iterable<? extends User>) of type UserServiceTest.MockUserRepository has the same erasure as saveAll(Iterable<S>) of type ListCrudRepository<T,ID> but does not override it
+	The method saveAll(Iterable<? extends User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	Erasure of method saveAll(Iterable<S>) is the same as another method in type UserServiceTest.MockUserRepository
+	java.util.Page cannot be resolved to a type
+	java.util.Page cannot be resolved to a type
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method CrudRepository<SchoolClass,UUID>.findById(UUID)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method SchoolClassRepository.findByName(String)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method JpaRepository<SchoolClass,UUID>.deleteAllByIdInBatch(Iterable<UUID>)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method ListCrudRepository<SchoolClass,UUID>.saveAll(Iterable<S>)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method JpaRepository<SchoolClass,UUID>.saveAndFlush(S)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method JpaRepository<SchoolClass,UUID>.flush()
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method QueryByExampleExecutor<SchoolClass>.findAll(Example<S>, Pageable)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method JpaRepository<SchoolClass,UUID>.deleteAllInBatch(Iterable<SchoolClass>)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method JpaRepository<SchoolClass,UUID>.saveAllAndFlush(Iterable<S>)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method QueryByExampleExecutor<SchoolClass>.findOne(Example<S>)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method SchoolClassRepository.existsByName(String)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method PagingAndSortingRepository<SchoolClass,UUID>.findAll(Pageable)
+	The method findOne(Specification<SchoolClass>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	The method findAll(Specification<SchoolClass>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	java.util.Page cannot be resolved to a type
+	The method count(Specification<SchoolClass>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	The method exists(Specification<SchoolClass>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	The method delete(Specification<SchoolClass>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	Name clash: The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockSchoolClassRepository has the same erasure as saveAll(Iterable<S>) of type ListCrudRepository<T,ID> but does not override it
+	Name clash: The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockSchoolClassRepository has the same erasure as saveAll(Iterable<S>) of type CrudRepository<T,ID> but does not override it
+	The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	The method findById(UUID) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	java.util.Page cannot be resolved to a type
+	java.util.Page cannot be resolved to a type
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method CrudRepository<AttendanceSession,UUID>.findById(UUID)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method AttendanceSessionRepository.findBySchoolClassIdAndStatus(UUID, SessionStatus)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method JpaRepository<AttendanceSession,UUID>.deleteAllByIdInBatch(Iterable<UUID>)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method JpaRepository<AttendanceSession,UUID>.flush()
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method ListCrudRepository<AttendanceSession,UUID>.saveAll(Iterable<S>)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method AttendanceSessionRepository.findBySchoolClassIdOrderByStartedAtDesc(UUID)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method JpaRepository<AttendanceSession,UUID>.saveAndFlush(S)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method QueryByExampleExecutor<AttendanceSession>.findAll(Example<S>, Pageable)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method JpaRepository<AttendanceSession,UUID>.deleteAllInBatch(Iterable<AttendanceSession>)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method QueryByExampleExecutor<AttendanceSession>.findOne(Example<S>)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method PagingAndSortingRepository<AttendanceSession,UUID>.findAll(Pageable)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method AttendanceSessionRepository.findAllByOrderByStartedAtDesc()
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method JpaRepository<AttendanceSession,UUID>.saveAllAndFlush(Iterable<S>)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method AttendanceSessionRepository.findBySchoolClassIdAndTeacherIdOrderByStartedAtDesc(UUID, UUID)
+	The method findOne(Specification<AttendanceSession>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	The method findAll(Specification<AttendanceSession>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	java.util.Page cannot be resolved to a type
+	The method count(Specification<AttendanceSession>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	The method exists(Specification<AttendanceSession>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	The method delete(Specification<AttendanceSession>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	Name clash: The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockAttendanceSessionRepository has the same erasure as saveAll(Iterable<S>) of type ListCrudRepository<T,ID> but does not override it
+	Name clash: The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockAttendanceSessionRepository has the same erasure as saveAll(Iterable<S>) of type CrudRepository<T,ID> but does not override it
+	The method findById(UUID) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	java.util.Page cannot be resolved to a type
+	Syntax error on token "}", delete this token
+	Duplicate field UserServiceTest.userId
+	Duplicate field UserServiceTest.testUser
+	Duplicate field UserServiceTest.userCreateRequest
+	Duplicate method setUp() in type UserServiceTest
+	Duplicate method testListAll() in type UserServiceTest
+	Duplicate method testListTeachers() in type UserServiceTest
+	Duplicate method testListTeachersEmpty() in type UserServiceTest
+	Duplicate method testCreateUserSuccess() in type UserServiceTest
+	Duplicate method testCreateUserEmailConflict() in type UserServiceTest
+	Duplicate method testDeleteUserSuccess() in type UserServiceTest
+	Duplicate method testDeleteUserNotFound() in type UserServiceTest
+	Duplicate method testDeleteUserWithAssignedClasses() in type UserServiceTest
+	Duplicate method testDeleteUserWithActiveSessions() in type UserServiceTest
+
+	at com.facetrack.service.UserServiceTest.<init>(UserServiceTest.java:38)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+com.facetrack.service.UserServiceTest.testDeleteUserWithActiveSessions -- Time elapsed: 0 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problems: 
+	Duplicate field UserServiceTest.userId
+	Duplicate field UserServiceTest.testUser
+	Duplicate field UserServiceTest.userCreateRequest
+	Duplicate method setUp() in type UserServiceTest
+	Duplicate method testListAll() in type UserServiceTest
+	Duplicate method testListTeachers() in type UserServiceTest
+	Duplicate method testListTeachersEmpty() in type UserServiceTest
+	Duplicate method testCreateUserSuccess() in type UserServiceTest
+	Duplicate method testCreateUserEmailConflict() in type UserServiceTest
+	Duplicate method testDeleteUserSuccess() in type UserServiceTest
+	Duplicate method testDeleteUserNotFound() in type UserServiceTest
+	Duplicate method testDeleteUserWithAssignedClasses() in type UserServiceTest
+	Duplicate method testDeleteUserWithActiveSessions() in type UserServiceTest
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method PagingAndSortingRepository<User,UUID>.findAll(Pageable)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method QueryByExampleExecutor<User>.findAll(Example<S>, Pageable)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method CrudRepository<User,UUID>.existsById(UUID)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method CrudRepository<User,UUID>.deleteAllById(Iterable<? extends UUID>)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method QueryByExampleExecutor<User>.findOne(Example<S>)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method JpaRepository<User,UUID>.saveAndFlush(S)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method ListCrudRepository<User,UUID>.saveAll(Iterable<S>)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method JpaRepository<User,UUID>.flush()
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method JpaRepository<User,UUID>.deleteAllInBatch(Iterable<User>)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method JpaRepository<User,UUID>.deleteAllByIdInBatch(Iterable<UUID>)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method JpaRepository<User,UUID>.saveAllAndFlush(Iterable<S>)
+	The method findOne(Specification<User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	The method findAll(Specification<User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	java.util.Page cannot be resolved to a type
+	The method count(Specification<User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	The method exists(Specification<User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	The method delete(Specification<User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	Erasure of method saveAll(Iterable<? extends User>) is the same as another method in type UserServiceTest.MockUserRepository
+	Name clash: The method saveAll(Iterable<? extends User>) of type UserServiceTest.MockUserRepository has the same erasure as saveAll(Iterable<S>) of type CrudRepository<T,ID> but does not override it
+	Name clash: The method saveAll(Iterable<? extends User>) of type UserServiceTest.MockUserRepository has the same erasure as saveAll(Iterable<S>) of type ListCrudRepository<T,ID> but does not override it
+	The method saveAll(Iterable<? extends User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	Erasure of method saveAll(Iterable<S>) is the same as another method in type UserServiceTest.MockUserRepository
+	java.util.Page cannot be resolved to a type
+	java.util.Page cannot be resolved to a type
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method CrudRepository<SchoolClass,UUID>.findById(UUID)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method SchoolClassRepository.findByName(String)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method JpaRepository<SchoolClass,UUID>.deleteAllByIdInBatch(Iterable<UUID>)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method ListCrudRepository<SchoolClass,UUID>.saveAll(Iterable<S>)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method JpaRepository<SchoolClass,UUID>.saveAndFlush(S)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method JpaRepository<SchoolClass,UUID>.flush()
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method QueryByExampleExecutor<SchoolClass>.findAll(Example<S>, Pageable)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method JpaRepository<SchoolClass,UUID>.deleteAllInBatch(Iterable<SchoolClass>)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method JpaRepository<SchoolClass,UUID>.saveAllAndFlush(Iterable<S>)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method QueryByExampleExecutor<SchoolClass>.findOne(Example<S>)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method SchoolClassRepository.existsByName(String)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method PagingAndSortingRepository<SchoolClass,UUID>.findAll(Pageable)
+	The method findOne(Specification<SchoolClass>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	The method findAll(Specification<SchoolClass>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	java.util.Page cannot be resolved to a type
+	The method count(Specification<SchoolClass>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	The method exists(Specification<SchoolClass>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	The method delete(Specification<SchoolClass>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	Name clash: The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockSchoolClassRepository has the same erasure as saveAll(Iterable<S>) of type ListCrudRepository<T,ID> but does not override it
+	Name clash: The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockSchoolClassRepository has the same erasure as saveAll(Iterable<S>) of type CrudRepository<T,ID> but does not override it
+	The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	The method findById(UUID) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	java.util.Page cannot be resolved to a type
+	java.util.Page cannot be resolved to a type
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method CrudRepository<AttendanceSession,UUID>.findById(UUID)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method AttendanceSessionRepository.findBySchoolClassIdAndStatus(UUID, SessionStatus)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method JpaRepository<AttendanceSession,UUID>.deleteAllByIdInBatch(Iterable<UUID>)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method JpaRepository<AttendanceSession,UUID>.flush()
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method ListCrudRepository<AttendanceSession,UUID>.saveAll(Iterable<S>)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method AttendanceSessionRepository.findBySchoolClassIdOrderByStartedAtDesc(UUID)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method JpaRepository<AttendanceSession,UUID>.saveAndFlush(S)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method QueryByExampleExecutor<AttendanceSession>.findAll(Example<S>, Pageable)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method JpaRepository<AttendanceSession,UUID>.deleteAllInBatch(Iterable<AttendanceSession>)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method QueryByExampleExecutor<AttendanceSession>.findOne(Example<S>)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method PagingAndSortingRepository<AttendanceSession,UUID>.findAll(Pageable)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method AttendanceSessionRepository.findAllByOrderByStartedAtDesc()
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method JpaRepository<AttendanceSession,UUID>.saveAllAndFlush(Iterable<S>)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method AttendanceSessionRepository.findBySchoolClassIdAndTeacherIdOrderByStartedAtDesc(UUID, UUID)
+	The method findOne(Specification<AttendanceSession>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	The method findAll(Specification<AttendanceSession>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	java.util.Page cannot be resolved to a type
+	The method count(Specification<AttendanceSession>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	The method exists(Specification<AttendanceSession>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	The method delete(Specification<AttendanceSession>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	Name clash: The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockAttendanceSessionRepository has the same erasure as saveAll(Iterable<S>) of type ListCrudRepository<T,ID> but does not override it
+	Name clash: The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockAttendanceSessionRepository has the same erasure as saveAll(Iterable<S>) of type CrudRepository<T,ID> but does not override it
+	The method findById(UUID) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	java.util.Page cannot be resolved to a type
+	Syntax error on token "}", delete this token
+	Duplicate field UserServiceTest.userId
+	Duplicate field UserServiceTest.testUser
+	Duplicate field UserServiceTest.userCreateRequest
+	Duplicate method setUp() in type UserServiceTest
+	Duplicate method testListAll() in type UserServiceTest
+	Duplicate method testListTeachers() in type UserServiceTest
+	Duplicate method testListTeachersEmpty() in type UserServiceTest
+	Duplicate method testCreateUserSuccess() in type UserServiceTest
+	Duplicate method testCreateUserEmailConflict() in type UserServiceTest
+	Duplicate method testDeleteUserSuccess() in type UserServiceTest
+	Duplicate method testDeleteUserNotFound() in type UserServiceTest
+	Duplicate method testDeleteUserWithAssignedClasses() in type UserServiceTest
+	Duplicate method testDeleteUserWithActiveSessions() in type UserServiceTest
+
+	at com.facetrack.service.UserServiceTest.<init>(UserServiceTest.java:38)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+com.facetrack.service.UserServiceTest.testListTeachersEmpty -- Time elapsed: 0 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problems: 
+	Duplicate field UserServiceTest.userId
+	Duplicate field UserServiceTest.testUser
+	Duplicate field UserServiceTest.userCreateRequest
+	Duplicate method setUp() in type UserServiceTest
+	Duplicate method testListAll() in type UserServiceTest
+	Duplicate method testListTeachers() in type UserServiceTest
+	Duplicate method testListTeachersEmpty() in type UserServiceTest
+	Duplicate method testCreateUserSuccess() in type UserServiceTest
+	Duplicate method testCreateUserEmailConflict() in type UserServiceTest
+	Duplicate method testDeleteUserSuccess() in type UserServiceTest
+	Duplicate method testDeleteUserNotFound() in type UserServiceTest
+	Duplicate method testDeleteUserWithAssignedClasses() in type UserServiceTest
+	Duplicate method testDeleteUserWithActiveSessions() in type UserServiceTest
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method PagingAndSortingRepository<User,UUID>.findAll(Pageable)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method QueryByExampleExecutor<User>.findAll(Example<S>, Pageable)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method CrudRepository<User,UUID>.existsById(UUID)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method CrudRepository<User,UUID>.deleteAllById(Iterable<? extends UUID>)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method QueryByExampleExecutor<User>.findOne(Example<S>)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method JpaRepository<User,UUID>.saveAndFlush(S)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method ListCrudRepository<User,UUID>.saveAll(Iterable<S>)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method JpaRepository<User,UUID>.flush()
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method JpaRepository<User,UUID>.deleteAllInBatch(Iterable<User>)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method JpaRepository<User,UUID>.deleteAllByIdInBatch(Iterable<UUID>)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method JpaRepository<User,UUID>.saveAllAndFlush(Iterable<S>)
+	The method findOne(Specification<User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	The method findAll(Specification<User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	java.util.Page cannot be resolved to a type
+	The method count(Specification<User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	The method exists(Specification<User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	The method delete(Specification<User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	Erasure of method saveAll(Iterable<? extends User>) is the same as another method in type UserServiceTest.MockUserRepository
+	Name clash: The method saveAll(Iterable<? extends User>) of type UserServiceTest.MockUserRepository has the same erasure as saveAll(Iterable<S>) of type CrudRepository<T,ID> but does not override it
+	Name clash: The method saveAll(Iterable<? extends User>) of type UserServiceTest.MockUserRepository has the same erasure as saveAll(Iterable<S>) of type ListCrudRepository<T,ID> but does not override it
+	The method saveAll(Iterable<? extends User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	Erasure of method saveAll(Iterable<S>) is the same as another method in type UserServiceTest.MockUserRepository
+	java.util.Page cannot be resolved to a type
+	java.util.Page cannot be resolved to a type
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method CrudRepository<SchoolClass,UUID>.findById(UUID)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method SchoolClassRepository.findByName(String)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method JpaRepository<SchoolClass,UUID>.deleteAllByIdInBatch(Iterable<UUID>)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method ListCrudRepository<SchoolClass,UUID>.saveAll(Iterable<S>)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method JpaRepository<SchoolClass,UUID>.saveAndFlush(S)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method JpaRepository<SchoolClass,UUID>.flush()
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method QueryByExampleExecutor<SchoolClass>.findAll(Example<S>, Pageable)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method JpaRepository<SchoolClass,UUID>.deleteAllInBatch(Iterable<SchoolClass>)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method JpaRepository<SchoolClass,UUID>.saveAllAndFlush(Iterable<S>)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method QueryByExampleExecutor<SchoolClass>.findOne(Example<S>)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method SchoolClassRepository.existsByName(String)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method PagingAndSortingRepository<SchoolClass,UUID>.findAll(Pageable)
+	The method findOne(Specification<SchoolClass>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	The method findAll(Specification<SchoolClass>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	java.util.Page cannot be resolved to a type
+	The method count(Specification<SchoolClass>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	The method exists(Specification<SchoolClass>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	The method delete(Specification<SchoolClass>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	Name clash: The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockSchoolClassRepository has the same erasure as saveAll(Iterable<S>) of type ListCrudRepository<T,ID> but does not override it
+	Name clash: The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockSchoolClassRepository has the same erasure as saveAll(Iterable<S>) of type CrudRepository<T,ID> but does not override it
+	The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	The method findById(UUID) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	java.util.Page cannot be resolved to a type
+	java.util.Page cannot be resolved to a type
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method CrudRepository<AttendanceSession,UUID>.findById(UUID)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method AttendanceSessionRepository.findBySchoolClassIdAndStatus(UUID, SessionStatus)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method JpaRepository<AttendanceSession,UUID>.deleteAllByIdInBatch(Iterable<UUID>)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method JpaRepository<AttendanceSession,UUID>.flush()
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method ListCrudRepository<AttendanceSession,UUID>.saveAll(Iterable<S>)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method AttendanceSessionRepository.findBySchoolClassIdOrderByStartedAtDesc(UUID)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method JpaRepository<AttendanceSession,UUID>.saveAndFlush(S)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method QueryByExampleExecutor<AttendanceSession>.findAll(Example<S>, Pageable)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method JpaRepository<AttendanceSession,UUID>.deleteAllInBatch(Iterable<AttendanceSession>)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method QueryByExampleExecutor<AttendanceSession>.findOne(Example<S>)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method PagingAndSortingRepository<AttendanceSession,UUID>.findAll(Pageable)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method AttendanceSessionRepository.findAllByOrderByStartedAtDesc()
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method JpaRepository<AttendanceSession,UUID>.saveAllAndFlush(Iterable<S>)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method AttendanceSessionRepository.findBySchoolClassIdAndTeacherIdOrderByStartedAtDesc(UUID, UUID)
+	The method findOne(Specification<AttendanceSession>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	The method findAll(Specification<AttendanceSession>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	java.util.Page cannot be resolved to a type
+	The method count(Specification<AttendanceSession>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	The method exists(Specification<AttendanceSession>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	The method delete(Specification<AttendanceSession>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	Name clash: The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockAttendanceSessionRepository has the same erasure as saveAll(Iterable<S>) of type ListCrudRepository<T,ID> but does not override it
+	Name clash: The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockAttendanceSessionRepository has the same erasure as saveAll(Iterable<S>) of type CrudRepository<T,ID> but does not override it
+	The method findById(UUID) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	java.util.Page cannot be resolved to a type
+	Syntax error on token "}", delete this token
+	Duplicate field UserServiceTest.userId
+	Duplicate field UserServiceTest.testUser
+	Duplicate field UserServiceTest.userCreateRequest
+	Duplicate method setUp() in type UserServiceTest
+	Duplicate method testListAll() in type UserServiceTest
+	Duplicate method testListTeachers() in type UserServiceTest
+	Duplicate method testListTeachersEmpty() in type UserServiceTest
+	Duplicate method testCreateUserSuccess() in type UserServiceTest
+	Duplicate method testCreateUserEmailConflict() in type UserServiceTest
+	Duplicate method testDeleteUserSuccess() in type UserServiceTest
+	Duplicate method testDeleteUserNotFound() in type UserServiceTest
+	Duplicate method testDeleteUserWithAssignedClasses() in type UserServiceTest
+	Duplicate method testDeleteUserWithActiveSessions() in type UserServiceTest
+
+	at com.facetrack.service.UserServiceTest.<init>(UserServiceTest.java:38)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+com.facetrack.service.UserServiceTest.testDeleteUserNotFound -- Time elapsed: 0 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problems: 
+	Duplicate field UserServiceTest.userId
+	Duplicate field UserServiceTest.testUser
+	Duplicate field UserServiceTest.userCreateRequest
+	Duplicate method setUp() in type UserServiceTest
+	Duplicate method testListAll() in type UserServiceTest
+	Duplicate method testListTeachers() in type UserServiceTest
+	Duplicate method testListTeachersEmpty() in type UserServiceTest
+	Duplicate method testCreateUserSuccess() in type UserServiceTest
+	Duplicate method testCreateUserEmailConflict() in type UserServiceTest
+	Duplicate method testDeleteUserSuccess() in type UserServiceTest
+	Duplicate method testDeleteUserNotFound() in type UserServiceTest
+	Duplicate method testDeleteUserWithAssignedClasses() in type UserServiceTest
+	Duplicate method testDeleteUserWithActiveSessions() in type UserServiceTest
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method PagingAndSortingRepository<User,UUID>.findAll(Pageable)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method QueryByExampleExecutor<User>.findAll(Example<S>, Pageable)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method CrudRepository<User,UUID>.existsById(UUID)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method CrudRepository<User,UUID>.deleteAllById(Iterable<? extends UUID>)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method QueryByExampleExecutor<User>.findOne(Example<S>)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method JpaRepository<User,UUID>.saveAndFlush(S)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method ListCrudRepository<User,UUID>.saveAll(Iterable<S>)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method JpaRepository<User,UUID>.flush()
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method JpaRepository<User,UUID>.deleteAllInBatch(Iterable<User>)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method JpaRepository<User,UUID>.deleteAllByIdInBatch(Iterable<UUID>)
+	The type UserServiceTest.MockUserRepository must implement the inherited abstract method JpaRepository<User,UUID>.saveAllAndFlush(Iterable<S>)
+	The method findOne(Specification<User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	The method findAll(Specification<User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	java.util.Page cannot be resolved to a type
+	The method count(Specification<User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	The method exists(Specification<User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	The method delete(Specification<User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	Erasure of method saveAll(Iterable<? extends User>) is the same as another method in type UserServiceTest.MockUserRepository
+	Name clash: The method saveAll(Iterable<? extends User>) of type UserServiceTest.MockUserRepository has the same erasure as saveAll(Iterable<S>) of type CrudRepository<T,ID> but does not override it
+	Name clash: The method saveAll(Iterable<? extends User>) of type UserServiceTest.MockUserRepository has the same erasure as saveAll(Iterable<S>) of type ListCrudRepository<T,ID> but does not override it
+	The method saveAll(Iterable<? extends User>) of type UserServiceTest.MockUserRepository must override or implement a supertype method
+	Erasure of method saveAll(Iterable<S>) is the same as another method in type UserServiceTest.MockUserRepository
+	java.util.Page cannot be resolved to a type
+	java.util.Page cannot be resolved to a type
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method CrudRepository<SchoolClass,UUID>.findById(UUID)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method SchoolClassRepository.findByName(String)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method JpaRepository<SchoolClass,UUID>.deleteAllByIdInBatch(Iterable<UUID>)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method ListCrudRepository<SchoolClass,UUID>.saveAll(Iterable<S>)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method JpaRepository<SchoolClass,UUID>.saveAndFlush(S)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method JpaRepository<SchoolClass,UUID>.flush()
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method QueryByExampleExecutor<SchoolClass>.findAll(Example<S>, Pageable)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method JpaRepository<SchoolClass,UUID>.deleteAllInBatch(Iterable<SchoolClass>)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method JpaRepository<SchoolClass,UUID>.saveAllAndFlush(Iterable<S>)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method QueryByExampleExecutor<SchoolClass>.findOne(Example<S>)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method SchoolClassRepository.existsByName(String)
+	The type UserServiceTest.MockSchoolClassRepository must implement the inherited abstract method PagingAndSortingRepository<SchoolClass,UUID>.findAll(Pageable)
+	The method findOne(Specification<SchoolClass>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	The method findAll(Specification<SchoolClass>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	java.util.Page cannot be resolved to a type
+	The method count(Specification<SchoolClass>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	The method exists(Specification<SchoolClass>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	The method delete(Specification<SchoolClass>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	Name clash: The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockSchoolClassRepository has the same erasure as saveAll(Iterable<S>) of type ListCrudRepository<T,ID> but does not override it
+	Name clash: The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockSchoolClassRepository has the same erasure as saveAll(Iterable<S>) of type CrudRepository<T,ID> but does not override it
+	The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	The method findById(UUID) of type UserServiceTest.MockSchoolClassRepository must override or implement a supertype method
+	java.util.Page cannot be resolved to a type
+	java.util.Page cannot be resolved to a type
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method CrudRepository<AttendanceSession,UUID>.findById(UUID)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method AttendanceSessionRepository.findBySchoolClassIdAndStatus(UUID, SessionStatus)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method JpaRepository<AttendanceSession,UUID>.deleteAllByIdInBatch(Iterable<UUID>)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method JpaRepository<AttendanceSession,UUID>.flush()
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method ListCrudRepository<AttendanceSession,UUID>.saveAll(Iterable<S>)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method AttendanceSessionRepository.findBySchoolClassIdOrderByStartedAtDesc(UUID)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method JpaRepository<AttendanceSession,UUID>.saveAndFlush(S)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method QueryByExampleExecutor<AttendanceSession>.findAll(Example<S>, Pageable)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method JpaRepository<AttendanceSession,UUID>.deleteAllInBatch(Iterable<AttendanceSession>)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method QueryByExampleExecutor<AttendanceSession>.findOne(Example<S>)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method PagingAndSortingRepository<AttendanceSession,UUID>.findAll(Pageable)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method AttendanceSessionRepository.findAllByOrderByStartedAtDesc()
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method JpaRepository<AttendanceSession,UUID>.saveAllAndFlush(Iterable<S>)
+	The type UserServiceTest.MockAttendanceSessionRepository must implement the inherited abstract method AttendanceSessionRepository.findBySchoolClassIdAndTeacherIdOrderByStartedAtDesc(UUID, UUID)
+	The method findOne(Specification<AttendanceSession>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	The method findAll(Specification<AttendanceSession>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	java.util.Page cannot be resolved to a type
+	The method count(Specification<AttendanceSession>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	The method exists(Specification<AttendanceSession>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	The method delete(Specification<AttendanceSession>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	Name clash: The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockAttendanceSessionRepository has the same erasure as saveAll(Iterable<S>) of type ListCrudRepository<T,ID> but does not override it
+	Name clash: The method saveAll(Iterable<? extends S>) of type UserServiceTest.MockAttendanceSessionRepository has the same erasure as saveAll(Iterable<S>) of type CrudRepository<T,ID> but does not override it
+	The method findById(UUID) of type UserServiceTest.MockAttendanceSessionRepository must override or implement a supertype method
+	java.util.Page cannot be resolved to a type
+	Syntax error on token "}", delete this token
+	Duplicate field UserServiceTest.userId
+	Duplicate field UserServiceTest.testUser
+	Duplicate field UserServiceTest.userCreateRequest
+	Duplicate method setUp() in type UserServiceTest
+	Duplicate method testListAll() in type UserServiceTest
+	Duplicate method testListTeachers() in type UserServiceTest
+	Duplicate method testListTeachersEmpty() in type UserServiceTest
+	Duplicate method testCreateUserSuccess() in type UserServiceTest
+	Duplicate method testCreateUserEmailConflict() in type UserServiceTest
+	Duplicate method testDeleteUserSuccess() in type UserServiceTest
+	Duplicate method testDeleteUserNotFound() in type UserServiceTest
+	Duplicate method testDeleteUserWithAssignedClasses() in type UserServiceTest
+	Duplicate method testDeleteUserWithActiveSessions() in type UserServiceTest
+
+	at com.facetrack.service.UserServiceTest.<init>(UserServiceTest.java:38)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+

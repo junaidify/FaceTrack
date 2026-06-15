@@ -108,14 +108,15 @@ public class SessionService {
                 .map(a -> a.getStudent().getId())
                 .collect(Collectors.toSet());
 
+        final AttendanceSession sessionRef = session;
         List<Attendance> absentRecords = classStudents.stream()
-                .filter(s -> !presentIds.contains(s.getId()))
-                .map(s -> Attendance.builder()
-                        .session(session)
-                        .student(s)
-                        .status(AttendanceStatus.ABSENT)
-                        .build())
-                .toList();
+            .filter(s -> !presentIds.contains(s.getId()))
+            .map(s -> Attendance.builder()
+                .session(sessionRef)
+                .student(s)
+                .status(AttendanceStatus.ABSENT)
+                .build())
+            .toList();
 
         if (!absentRecords.isEmpty()) {
             attendanceRepository.saveAll(absentRecords);
